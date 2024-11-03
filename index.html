@@ -11,15 +11,21 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <style>
+        body{
+            background-color: black;
+            color: white;
+        }
         .hidden {
             display: none;
         }
 
         th {
             text-align: center;
+            color: white;
         }
         td{
             text-transform: lowercase;
+            color: white;
         }
         button {
             position: fixed;
@@ -39,7 +45,7 @@
     <div class="container">
         <button onclick="toggleColumn()" class="btn btn-success">Hide/Show</button>
         <h1 class="text-center">Vocabulary</h1>
-        <table class="table table-bordered border-dark" id="myTable">
+        <table class="table table-bordered border-light" id="myTable">
             <tr>
                 <th>ID</th>
                 <th>Word</th>
