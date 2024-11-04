@@ -33,8 +33,10 @@
             background-color: black;
             color: white;
             border-color: white;
-            margin-top: 2px;
-            float: right;
+            margin-bottom: 2px;
+            margin-right: 2px;
+            right: 0;
+            bottom: 0;
         }
         button:hover{
             background-color: white;
@@ -44,16 +46,19 @@
     <script>
         function toggleColumn() {
             var table = document.getElementById("myTable");
+            var button = document.getElementById('btn');
+            var isHidden = table.rows[0].cells[2].classList.contains("hidden");
             for (var i = 0; i < table.rows.length; i++) {
                 table.rows[i].cells[2].classList.toggle("hidden");
             }
+            button.textContent = isHidden? 'Hide Meaning': 'Show Meaning';
         } 
     </script>
 </head>
 
 <body>
     <div class="container">
-        <button onclick="toggleColumn()">Hide/Show</button>
+        <button onclick="toggleColumn()" id="btn">Hide Meaning</button>
         <h1 class="text-center">Vocabulary</h1>        
 
         <table class="table table-bordered border-light" id="myTable">
@@ -898,33 +903,33 @@
             <tr>
                 <td>147</td>
                 <td>Elicit</td>
-                <td>আলোচনা করে বের করা </td>
+                <td>আলোচনা করে বের করা; to get or produce something, especially information or a reaction </td>
             </tr>
             <tr>
                 <td>148</td>
                 <td>Embellish</td>
-                <td>সাজানো </td>
+                <td>সাজানো; to make something more beautiful by adding something to it </td>
             </tr>
             <tr>
                 <td>149</td>
                 <td>Empirical</td>
-                <td>based on experience </td>
+                <td>based on experience; based on what is experienced or seen rather than on theory </td>
             </tr>
             <tr>
                 <td>150</td>
                 <td>Emulate</td>
-                <td>বিদ্রোহী ভাব, intimate, rival, অনুকরণ করা</td>
+                <td>বিদ্রোহী ভাব, intimate, rival, অনুকরণ করা; to copy something achieved by someone else and try to do it as well as they have</td>
                 
             </tr>
             <tr>
                 <td>151</td>
                 <td>Endemic</td>
-                <td>prevailing in one group </td>
+                <td>prevailing in one group; especially of a disease or a condition, regularly found and very common among a particular group or in a particular area </td>
             </tr>
             <tr>
                 <td>152</td>
                 <td>Enervate</td>
-                <td>উদ্দীপিত করা </td>
+                <td>to make someone feel weak and without energy </td>
             </tr>
             <tr>
                 <td>153</td>
@@ -942,17 +947,17 @@
             <tr>
                 <td>155</td>
                 <td>Eon</td>
-                <td>যুগ-যুগান্তর </td>
+                <td>যুগ-যুগান্তর; a period of time that is so long that it cannot be measured </td>
             </tr>
             <tr>
                 <td>156</td>
                 <td>Ephemeral</td>
-                <td>ক্ষণস্থায়ী </td>
+                <td>ক্ষণস্থায়ী; lasting for only a short time </td>
             </tr>
             <tr>
                 <td>157</td>
                 <td>Equivocate</td>
-                <td>ব্যঙ্গ করা, use ambiguous language so as to conceal the truth or avoid committing oneself</td>
+                <td>ব্যঙ্গ করা, use ambiguous language so as to conceal the truth or avoid committing oneself; to speak in a way that is intentionally not clear and confusing to other people, especially to hide the truth</td>
                 
             </tr>
             <tr>
@@ -963,66 +968,66 @@
             <tr>
                 <td>159</td>
                 <td>Estranged</td>
-                <td>বিচ্ছিন্ন, (of a person) no longer close or affectionate to someone</td>
+                <td>বিচ্ছিন্ন, (of a person) no longer close or affectionate to someone; If you are estranged from your family or friends, you have had a serious argument with them and are no longer friendly with them</td>
                 
             </tr>
             <tr>
                 <td>160</td>
                 <td>Euphemism</td>
-                <td>অধিক ভালো প্রকাশ, mild alternative</td>
+                <td>অধিক ভালো প্রকাশ, mild alternative; a word or phrase used to avoid saying an unpleasant or offensive word</td>
                 
             </tr>
             <tr>
                 <td>161</td>
                 <td>Exacerbate</td>
-                <td>ক্ষতি হওয়া </td>
+                <td>ক্ষতি হওয়া; to make something that is already bad even worse </td>
             </tr>
             <tr>
                 <td>162</td>
                 <td>Exaggerated</td>
-                <td>অতি রঞ্জিত </td>
+                <td>অতি রঞ্জিত; seeming larger, more important, better, or worse than it really is </td>
             </tr>
             <tr>
                 <td>163</td>
                 <td>Exculpate</td>
-                <td>দোষমুক্ত </td>
+                <td>দোষমুক্ত; to remove blame from someone </td>
             </tr>
             <tr>
                 <td>164</td>
                 <td>Exigency</td>
-                <td>জরুরী অবস্থা </td>
+                <td>জরুরী অবস্থা; the difficulties of a situation, especially one that causes urgent demands</td>
             </tr>
             <tr>
                 <td>165</td>
                 <td>Extrapolation</td>
-                <td>অনুমান, assumption</td>
+                <td>অনুমান, assumption; the process of using information that is already known to guess or think about what might happen</td>
                 
             </tr>
             <tr>
                 <td>166</td>
                 <td>Facetious</td>
-                <td>রসিক, humorous</td>
+                <td>রসিক, humorous; not serious about a serious subject, in an attempt to be funny or to appear clever</td>
                 
             </tr>
             <tr>
                 <td>167</td>
                 <td>Facilitate</td>
-                <td>সাহায্যকারী </td>
+                <td>সাহায্যকারী; to make something possible or easier </td>
             </tr>
             <tr>
                 <td>168</td>
-                <td>Falicitous</td>
-                <td>যথোপযুক্ত </td>
+                <td>Felicitous</td>
+                <td>যথোপযুক্ত; suitable or right and expressing well the intended thought or feeling </td>
             </tr>
             <tr>
                 <td>169</td>
                 <td>Fallacious</td>
-                <td>ভুল পথে চলা </td>
+                <td>ভুল পথে চলা; not correct </td>
             </tr>
             <tr>
                 <td>170</td>
                 <td>Fanciful</td>
-                <td>over-imaginative and unrealistic </td>
+                <td>over-imaginative and unrealistic; not likely to succeed or happen in the real world </td>
             </tr>
             <tr>
                 <td>171</td>
