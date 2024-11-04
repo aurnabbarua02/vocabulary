@@ -29,6 +29,16 @@
         }
         button {
             position: fixed;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            border-color: white;
+            margin-top: 2px;
+            float: right;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
         }
     </style>
     <script>
@@ -43,8 +53,9 @@
 
 <body>
     <div class="container">
-        <button onclick="toggleColumn()" class="btn btn-success">Hide/Show</button>
-        <h1 class="text-center">Vocabulary</h1>
+        <button onclick="toggleColumn()">Hide/Show</button>
+        <h1 class="text-center">Vocabulary</h1>        
+
         <table class="table table-bordered border-light" id="myTable">
             <tr>
                 <th>ID</th>
