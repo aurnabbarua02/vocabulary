@@ -7,9 +7,9 @@ function toggleColumn() {
     }
     button.textContent = isHidden? 'Hide Meaning': 'Show Meaning';
 } 
-function setId(id){
-    var table = document.getElementById("myTable");
-    for (var i = id; i < table.rows.length; i++){
-        table.rows[i].cells[0].textContent = i;
-    }
-}  
+// function setId(id){
+//     var table = document.getElementById("myTable");
+//     for (var i = 1; i < table.rows.length; i++){
+//         table.rows[i].cells[0].textContent = i + id -1;
+//     }
+// }  
