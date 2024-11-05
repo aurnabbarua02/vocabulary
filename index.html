@@ -594,14 +594,8 @@
             <a href="page2.html"><button>Page 2 ></button></a>
         </div> 
     </div>
-    <script>
-        function setId(){
-            var table = document.getElementById("myTable");
-            for (var i = 1; i < table.rows.length; i++){
-                table.rows[i].cells[0].textContent = i;
-            }
-        }    
-        setId();
+    <script>          
+        setId(1);
     </script>
 </body>
 
