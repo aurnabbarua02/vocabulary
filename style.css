@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    color: white;
+}
+.hidden {
+    display: none;
+}
+
+th {
+    text-align: center;
+    color: white;
+}
+td{
+    text-transform: lowercase;
+    color: white;
+}
+button {    
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border-color: white;   
+    margin-bottom: 2px; 
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+.show_hide_button{
+    position: fixed;    
+    margin-right: 2px;
+    right: 0;
+    bottom: 0;
+}
