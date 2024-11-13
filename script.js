@@ -16,11 +16,14 @@ function navbar() {
         { href: 'page5.html', text: 'Page 5 (401-500)' }, 
         { href: 'page6.html', text: 'Page 6 (501-600)' }, 
         { href: 'page7.html', text: 'Page 7 (601-700)' }, 
-        { href: 'page8.html', text: 'Page 8 (701-800)' }]; 
+        { href: 'page8.html', text: 'Page 8 (701-800)' },
+        { href: 'page9.html', text: 'Page 9 (801-900)' }
+    ]; 
+
         const navbarList = document.getElementById('navbar-list'); 
         pages.forEach((page, index) => { 
             const li = document.createElement('li'); 
-            li.className = 'nav-item' + (index === 0 ? ' active' : ''); 
+            li.className = 'nav-item'; 
             const a = document.createElement('a'); 
             a.className = 'nav-link'; 
             a.href = page.href; 
