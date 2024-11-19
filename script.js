@@ -7,6 +7,12 @@ function toggleColumn() {
     }
     button.textContent = isHidden ? 'Hide Meaning' : 'Show Meaning';
 }
+function hide_id() {
+    var table = document.getElementById("myTable");   
+    for (var i = 0; i < table.rows.length; i++) {
+        table.rows[i].cells[0].classList.toggle("hidden");
+    }    
+}
 // document.addEventListener('DOMContentLoaded', (event) => {
 //     function findDuplicates() {
 //         const table = document.getElementById('myTable');

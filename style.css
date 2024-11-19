@@ -36,4 +36,11 @@ button:hover {
     right: 0;
     bottom: 0;
 }
-
+.hide_id_button{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.verbal_grail td{
+    color: rgb(93, 208, 93);
+}
