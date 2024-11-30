@@ -13,6 +13,9 @@ function hide_id() {
         table.rows[i].cells[0].classList.toggle("hidden");
     }    
 }
+function similar_right(){
+    return 'similar <i class="bi bi-arrow-right"></i>';
+}
 // document.addEventListener('DOMContentLoaded', (event) => {
 //     function findDuplicates() {
 //         const table = document.getElementById('myTable');
